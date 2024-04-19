@@ -8,7 +8,7 @@ let confirmDeleteBtn = document.getElementById('confirmDeleteBtn');
 let closeModal = document.getElementById('closeModal');
 let cancelDeleteBtn = document.getElementById('cancelDeleteBtn');
 
-const API_KEY =  "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";
+const API_KEY = "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";
 
 // Save the API key in localStorage
 let userText = null;
@@ -20,8 +20,8 @@ const loadDataFromLocalstorage = () => {
     themeButton.innerText = document.body.classList.contains("light-mode") ? "dark_mode" : "light_mode";
 
     const defaultText = `<div class="default-text">
-                            <h1>ChatGPT Clone</h1>
-                            <p>Start a conversation and explore the power of AI.<br> Your chat history will be displayed here.</p>
+                            <h1>LitoIA - Litodroid</h1>
+                            <p>Inicie una conversacion y experimente el poder de LitoIA.</p>
                         </div>`
 
     chatContainer.innerHTML = localStorage.getItem("all-chats") || defaultText;
@@ -45,7 +45,7 @@ const getChatResponse = async (incomingChatDiv) => {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
-            "Authorization": `Litodroid ${API_KEY}`
+            "Authorization": `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`
         },
         body: JSON.stringify({
             model: "text-davinci-003",
@@ -63,10 +63,8 @@ const getChatResponse = async (incomingChatDiv) => {
         pElement.textContent = response.choices[0].text.trim();
     } catch (error) { // Add error class to the paragraph element and set error text
         pElement.classList.add("error"); 
-       pElement.innerHTML = ` You didn't provide an API key. You need to provide your API key in an Authorization header using Bearer auth
-        (i.e. Authorization: Bearer YOUR_KEY), or as the password field (with blank username) if you're accessing the
-        API from your browser and are prompted for a username and password. You can obtain an API key from <a
-            href="https://platform.openai.com/account/api-keys">Go on</a>`;
+       pElement.innerHTML = `Hay un problema con el API_KEY   si quiere donar al creador puede hacerlo desde este lugar  <a
+            href="https://paypal.me/litodroid/">Go on</a>`;
     }
 
     // Remove the typing animation, append the paragraph element and save the chats to local storage
