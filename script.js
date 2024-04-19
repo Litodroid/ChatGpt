@@ -45,7 +45,7 @@ const getChatResponse = async (incomingChatDiv) => {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
-            "Authorization": `Bearer ${API_KEY}`
+            "Authorization": `Litodroid ${API_KEY}`
         },
         body: JSON.stringify({
             model: "text-davinci-003",
