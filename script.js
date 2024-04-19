@@ -8,7 +8,9 @@ let confirmDeleteBtn = document.getElementById('confirmDeleteBtn');
 let closeModal = document.getElementById('closeModal');
 let cancelDeleteBtn = document.getElementById('cancelDeleteBtn');
 
-function _0x1f0b(){const _0x29e0c4=['6VGJVtI','21MAStVP','258ujWWdf','279724GAPXAX','3241926FKAUEx','3592782lwJqTX','433870lCiVcE','3365416NPZRyE','10fTuFWn','12316kcwkjz','5372312OnjIkO'];_0x1f0b=function(){return _0x29e0c4;};return _0x1f0b();}(function(_0x10d21d,_0xa5ec8a){const _0x5db77b=_0x253c,_0xda386f=_0x10d21d();while(!![]){try{const _0x36ad95=-parseInt(_0x5db77b(0xca))/0x1*(-parseInt(_0x5db77b(0xc7))/0x2)+parseInt(_0x5db77b(0xc9))/0x3*(parseInt(_0x5db77b(0xc5))/0x4)+parseInt(_0x5db77b(0xc2))/0x5+parseInt(_0x5db77b(0xc1))/0x6+parseInt(_0x5db77b(0xc8))/0x7*(-parseInt(_0x5db77b(0xc3))/0x8)+-parseInt(_0x5db77b(0xcb))/0x9+-parseInt(_0x5db77b(0xc4))/0xa*(-parseInt(_0x5db77b(0xc6))/0xb);if(_0x36ad95===_0xa5ec8a)break;else _0xda386f['push'](_0xda386f['shift']());}catch(_0x20dc26){_0xda386f['push'](_0xda386f['shift']());}}}(_0x1f0b,0xa0144));function _0x253c(_0x1de3d7,_0x1bf897){const _0x1f0bc2=_0x1f0b();return _0x253c=function(_0x253c45,_0x26f5a1){_0x253c45=_0x253c45-0xc1;let _0x533c33=_0x1f0bc2[_0x253c45];return _0x533c33;},_0x253c(_0x1de3d7,_0x1bf897);}const QVBJX0tFWT0nc2sta2RRMHhxeEYzbHU4VHRhUEpWREVUM0JsYmtGSlJVQ2tlTE5icWNMZUlaWkQxYkh2Jzs=
+
+const API_KEY = "c2sta2RRMHhxeEYzbHU4VHRhUEpWREVUM0JsYmtGSlJVQ2tlTE5icWNMZUlaWkQxYkh2";
+
 // Save the API key in localStorage
 let userText = null;
 const loadDataFromLocalstorage = () => {
