@@ -8,7 +8,7 @@ let confirmDeleteBtn = document.getElementById('confirmDeleteBtn');
 let closeModal = document.getElementById('closeModal');
 let cancelDeleteBtn = document.getElementById('cancelDeleteBtn');
 
-const API_KEY = "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";
+const API_KEY = "sk-proj-7poCr4rUokSigKCPRuQZT3BlbkFJwjmy8RTGQsFwo9fJQpiC";
 
 // Save the API key in localStorage
 let userText = null;
