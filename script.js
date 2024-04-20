@@ -8,7 +8,7 @@ let confirmDeleteBtn = document.getElementById('confirmDeleteBtn');
 let closeModal = document.getElementById('closeModal');
 let cancelDeleteBtn = document.getElementById('cancelDeleteBtn');
 
-const API_KEY = "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";
+const API_KEY = "sk-asddassdfasdefqsdfasd23das3dasdcasd";
 
 // Save the API key in localStorage
 let userText = null;
@@ -45,7 +45,7 @@ const getChatResponse = async (incomingChatDiv) => {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
-            "Authorization": `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`
+            "Authorization": `${API_KEY}`
         },
         body: JSON.stringify({
             model: "text-davinci-003",
